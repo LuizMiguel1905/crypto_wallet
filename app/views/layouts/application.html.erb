@@ -7,10 +7,16 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "scaffolds", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag params[:controller], "data-turbo-track": "reload" %>
+
     <%= javascript_importmap_tags %>
+    <%= javascript_include_tag params[:controller], "data-turbo-track": "reload" %>
   </head>
 
   <body>
+  <h1>CABEÇALHO - <%= params[:controller] %></h1>
     <%= yield %>
+  <h1>RODAPE</h1>
   </body>
 </html>

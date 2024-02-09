@@ -1,7 +1,17 @@
+
+<p>
+    <%= link_to 'Português', '/?locale=pt-BR' %>
+</p>
+
+<p>
+    <%= link_to 'English', '/?locale=en' %>
+</p>
 <h1>Bem vindo meu nobre <%= @meu_nome %>!</h1>
+<p>O idioma utilizado nessa aplicação é: <strong> <%= locale(I18n.locale) %></strong></p>
+<p><strong>Data:</strong> <%= l(Date.today) %></p>
 <p>Voce está realizando o curso de <strong><%= @meu_curso%></strong></p>
+
 <%= render "menu" %>
-<%= render "menu" %>
-<%= render "menu" %>
+
 
 <p>Voce está no ambiente de <strong><%= rails_ambient_ptbr %><strong></p>

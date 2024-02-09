@@ -1,4 +1,10 @@
-<div id="<%= dom_id coin %>">
+
+<div id="<%= dom_id coin %>" class="coin">
+
+  <p>
+    <%= image_tag coin.url_image, width: 25%>
+  </p>
+
   <p>
     <strong>Description:</strong>
     <%= coin.description %>
@@ -9,9 +15,5 @@
     <%= coin.acronym %>
   </p>
 
-  <p>
-    <strong>Url image:</strong>
-    <%= image_tag coin.url_image, width: 25%>
-  </p>
 
 </div>
