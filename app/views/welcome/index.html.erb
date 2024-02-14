@@ -6,12 +6,15 @@
 <p>
     <%= link_to 'English', '/?locale=en' %>
 </p>
-<h1>Bem vindo meu nobre <%= @meu_nome %>!</h1>
-<p>O idioma utilizado nessa aplicação é: <strong> <%= locale(I18n.locale) %></strong></p>
-<p><strong>Data:</strong> <%= l(Date.today) %></p>
-<p>Voce está realizando o curso de <strong><%= @meu_curso%></strong></p>
-
-<%= render "menu" %>
-
-
+<div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+    <h1 class="display-5 fw-bold text-body-emphasis">CryptoPotatoWallet</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Uma batata segura para você guardar suas criptos favoritas em um só lugar!</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <%= render "menu" %>
+      </div>
+    </div>
+  </div>
+  
 <p>Voce está no ambiente de <strong><%= rails_ambient_ptbr %><strong></p>

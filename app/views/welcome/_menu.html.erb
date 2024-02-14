@@ -1,8 +1,19 @@
-<ul>
-    <li>
-        <%= link_to "Moedas", coins_path %>
-    </li>
-        <li>
-        <%= link_to "Tipos de Mineração", mining_types_path %>
-    </li>
-</ul>
+<%= link_to coins_path do %>
+<div class="card" style="width: 18rem;">
+  <%= image_tag("coin-icon.png", class:"card-img-top")%>
+  <div class="card-body">
+    <h5 class="card-title">Lista de Cripto</h5>
+    <p class="card-text">Cadastre as criptos desejadas</p>
+  </div>
+</div>
+    <% end %>
+
+<%= link_to mining_types_path  do %>
+<div class="card" style="width: 18rem;">
+  <%= image_tag("pickage-icon.png", class:"card-img-top")%>
+  <div class="card-body">
+    <h5 class="card-title">Listas de tipos de mineração</h5>
+    <p class="card-text">Cadastre as formas em como as criptos são mineradas</p>
+  </div>
+</div>
+    <% end %>
