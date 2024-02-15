@@ -15,9 +15,9 @@ mining_types.js
 scaffolds.js
 welcome.js
   )
-Rails.application.config.assets.precompile += %w( coins.css
+Rails.application.config.assets.precompile += %w(
+coins.css
 mining_types.css
 scaffolds.css
 welcome.css
   )
-

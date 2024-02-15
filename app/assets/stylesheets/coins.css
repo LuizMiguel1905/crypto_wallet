@@ -3,10 +3,22 @@
     cursor: pointer;
     font-size: 18px;
     margin: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0); 
+    transition: box-shadow 0.3s ease; 
 }
 
 .button_icon{
     margin: 20px;
     padding: 32px;
     background-color: red;
+}
+
+.centro {
+    width: 300px; /* largura desejada */
+    height: 200px; /* altura desejada */
+    text-align: center; /* alinhar texto ao centro dentro da div */
+}
+
+.coin:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* sombra quando passar o mouse */
 }
