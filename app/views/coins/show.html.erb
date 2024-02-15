@@ -6,7 +6,7 @@
   <div style="display:fixed;" >
     <div style="display:flex">
     <%= link_to t('links.edit'), edit_coin_path(@coin), class:"btn btn-warning"%> 
-    <%= link_to "Back to coins", coins_path, class:"btn btn-info" %>
+    <%= link_to t('links.back'), coins_path, class:"btn btn-info" %>
     <%= button_to t('links.delete'), @coin, method: :delete, class:"btn btn-danger" %>
 
     

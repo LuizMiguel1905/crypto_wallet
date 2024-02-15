@@ -3,8 +3,8 @@
 <%= render @mining_type %>
 
 <div style="display:flex;">
-  <%= link_to "Editar", edit_mining_type_path(@mining_type), class:"btn btn-warning"%> 
-  <%= link_to "Voltar", mining_types_path, class:"btn btn-info"%>
+  <%= link_to t('links.edit'), edit_mining_type_path(@mining_type), class:"btn btn-warning"%> 
+  <%= link_to t('links.back'), mining_types_path, class:"btn btn-info"%>
 
-  <%= button_to "Apagar", @mining_type, method: :delete, class:"btn btn-danger" %>
+  <%= button_to t('links.delete'), @mining_type, method: :delete, class:"btn btn-danger" %>
 </div>

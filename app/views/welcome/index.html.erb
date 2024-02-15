@@ -1,23 +1,23 @@
 <div style="display:flex">
-<p>
+  <p>
     <%= link_to 'Português', '/?locale=pt-BR' %>
-</p>
+  </p>
 
-<p>
+  <p>
     <%= link_to 'English', '/?locale=en' %>
-</p>
+  </p>
 </div>
+
 <div class="px-4 py-5 my-5 text-center banner">
-    <%= image_tag('potato-logo2.png', size: '120x120') %>  
-    <h1 class="display-5 fw-bold text-body-emphasis">CryptoPotatoWallet</h1>
-    <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">Registre suas crisptomoedas e catalogue a forma em como elas são mineradas em um só lugar!</p>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <%= link_to "Lista de Crypto", coins_path , class:'btn btn-primary btn-lg px-4 gap-3'%>
-        <%= link_to "Tipos de Mineração", mining_types_path, class:'btn btn-secondary btn-lg px-4' %>
-      </div>
+  <%= image_tag('potato-logo2.png', size: '120x120') %>  
+  <h1 class="display-5 fw-bold text-body-emphasis">CryptoWalletPotato</h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4"><%= t('descIndex') %></p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      <%= link_to t('title.coinPage'), coins_path, class: 'btn btn-primary btn-lg px-4 gap-3' %>
+      <%= link_to t('title.minerPage'), mining_types_path, class: 'btn btn-secondary btn-lg px-4' %>
     </div>
   </div>
+</div>
 
-
-<p>Voce está no ambiente de <strong><%= rails_ambient_ptbr %><strong></p>
+<p>Voce está no ambiente de <strong><%= rails_ambient_ptbr %></strong></p>

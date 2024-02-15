@@ -14,13 +14,7 @@
     </div>
   <% end %>
 
-  <div>
-    <% if coin.url_image.present? %>
-      <%= image_tag coin.url_image, width: 25 %>
-    <% end %>
-    <%= form.label :url_image, style: "display: block" %>
-    <%= form.text_field :url_image, class:"form-control" %>
-  </div>
+<%= render "image_preview", form: form %>
 
   <div>
     <%= form.label :description, class:"form-label" ,style: "display: block" %>
@@ -35,10 +29,10 @@
 
 
   <div class="field">
-  <%= form.select  :mining_type_id, @mining_type_options, { include_blank: 'Selecione...' }, class:"form-select"
+  <%= form.select  :mining_type_id, @mining_type_options, { include_blank: t('forms.select') }, class:"form-select"
 %>
   </div>
   <div>
-    <%= form.submit  class:"btn btn-success"%>
+    <%= form.submit class:"btn btn-success"%>
   </div>
 <% end %>

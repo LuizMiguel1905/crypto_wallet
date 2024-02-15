@@ -12,17 +12,17 @@
   <% end %>
 
   <div>
-    <%= form.label :description, style: "display: block" %>
+    <%= form.label t('forms.description'), style: "display: block" %>
     <%= form.text_field :description, class:"form-control" %>
   </div>
 
   <div>
-    <%= form.label :acronym, style: "display: block" %>
+    <%= form.label t('forms.acronym'), style: "display: block" %>
     <%= form.text_field :acronym, class:"form-control" %>
   </div>
 
   <div>
-<%= form.submit %>
+<%= form.submit class:"btn btn-success"%>
 
   </div>
 <% end %>

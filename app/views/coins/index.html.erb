@@ -1,13 +1,13 @@
 
 <p style="color: green"><%= notice %></p>
 
-<h1 style="text-align:center">Crypto Page List</h1>
+<h1 style="text-align:center"><%= t('title.coinPage')%></h1>
 
 <h2> <%= cookies[:curso] %></h2>
 <%= button_to new_coin_path, method: :get, class: "btn btn-success" do %>
-  Nova Cripto
+  <%=t('links.newCrypto') %>
 <% end %>
-
+<%= link_to t('links.back'), root_path %>
 <div id="coins" style= 'display:flex;'>
   <% @coins.each do |coin| %>
     <%= render coin %>

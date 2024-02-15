@@ -1,6 +1,33 @@
 pt-BR:
   hello: "Olá mundo"
+  descIndex: "Registre suas crisptomoedas e catalogue a forma em como elas são mineradas em um só lugar!"
+  devMode: "Voce está no ambiente de "
+  title:
+    coinPage: "Lista de Criptos"
+    minerPage: "Lista de tipos de mineração"
+    newCrypto: "Nova Cripto"
+    newMiner: "Cadastrar novo tipo de mineração"
+    editMiner: "Edição do tipo de mineração"
   links:
+    newCrypto: "Nova Cripto"
+    createCoin: "Criar Cripto"
+    updateCoin: "Atualizar Cripto"
     edit: "Editar"
     show: "Mostrar"
-    delete: "Apagar"  
+    delete: "Apagar" 
+    back: "Voltar"
+    listaCripto: "Lista de Cripto"
+    tipoMina: "Tipos de Mineração" 
+
+  forms:
+    url_image: "Url da imagem:"
+    description: "Descrição"
+    acronym: "Sigla"
+    select: "Selecione"
+
+  mPage:
+    createMiner: "Cadastrar novo tipo de mineração"
+    type: "Tipo: "
+    acronym: "Sigla"
+    show: "Mostrar mais detalhes"
+    

@@ -1,9 +1,9 @@
-<h1>Novo tipo de moeda</h1>
+<h1><%= t('title.newCrypto')%></h1>
 
 <%= render "form", coin: @coin %>
 
 <br>
 
 <div>
-  <%= link_to "Voltar", coins_path, class:"btn btn-info" %>
+  <%= link_to t('links.back'), coins_path, class:"btn btn-info" %>
 </div>

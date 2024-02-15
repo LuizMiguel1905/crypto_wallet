@@ -1,9 +1,9 @@
-<h1>Editing mining type</h1>
+<h1><%= t('title.editMiner')%></h1>
 
 <%= render "form", mining_type: @mining_type %>
 
 <br>
 
 <div>
-  <%= link_to "Voltar", @mining_type, class:"btn btn-info" %> 
+  <%= link_to t('forms.back'), @mining_type, class:"btn btn-info" %> 
 </div>

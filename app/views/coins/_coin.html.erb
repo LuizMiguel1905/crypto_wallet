@@ -1,7 +1,9 @@
 <%= link_to coin, class: "coin card mb-3 text-center", style: "width: 10rem;" do %>
   <div id="<%= dom_id coin %>" class="card-body">
     <p>
-      <%= image_tag coin.url_image, width: "100%" %>
+      <% if coin.url_image.attached? %>
+        <%= image_tag(coin.url_image, style: "height: 100px;") %>
+      <% end %>
     </p>
 
     <p class="card-text">
