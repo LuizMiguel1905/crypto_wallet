@@ -20,3 +20,4 @@ mining_types.css
 scaffolds.css
 welcome.css
   )
+

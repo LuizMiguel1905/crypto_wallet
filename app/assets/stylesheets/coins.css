@@ -1,0 +1,12 @@
+
+.coin{
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.button_icon{
+    margin: 20px;
+    padding: 32px;
+    background-color: red;
+}

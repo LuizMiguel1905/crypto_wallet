@@ -1,19 +1,11 @@
+<%= link_to coin, class: "coin card mb-3 text-center", style: "width: 10rem;" do %>
+  <div id="<%= dom_id coin %>" class="card-body">
+    <p>
+      <%= image_tag coin.url_image, width: "100%" %>
+    </p>
 
-<div id="<%= dom_id coin %>" class="coin">
-
-  <p>
-    <%= image_tag coin.url_image, width: 25%>
-  </p>
-
-  <p>
-    <strong>Description:</strong>
-    <%= coin.description %>
-  </p>
-
-  <p>
-    <strong>Acronym:</strong>
-    <%= coin.acronym %>
-  </p>
-
-
-</div>
+    <p class="card-text">
+      <strong><%= coin.description %></strong> | <%= coin.acronym %>
+    </p>
+  </div>
+<% end %>

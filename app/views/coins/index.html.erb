@@ -1,17 +1,20 @@
 
 <p style="color: green"><%= notice %></p>
 
-<h1 style="text-align:center">Crypto</h1>
+<h1 style="text-align:center">Crypto Page List</h1>
+
 <h2> <%= cookies[:curso] %></h2>
-<div id="coins">
+<%= button_to new_coin_path, method: :get, class: "btn btn-success" do %>
+  Nova Cripto
+<% end %>
+
+<div id="coins" style= 'display:flex;'>
   <% @coins.each do |coin| %>
     <%= render coin %>
-    <p>
-      <%= link_to "Show this coin", coin %>
-    </p>
   <% end %>
+  <div class="new_coin">
+
 </div>
 
-<div class="new_coin">
-<%= link_to "New coin", new_coin_path %>
 </div>
+
