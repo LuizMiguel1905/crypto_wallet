@@ -3,6 +3,7 @@ pt-BR:
   descIndex: "Registre suas crisptomoedas e catalogue a forma em como elas são mineradas em um só lugar!"
   devMode: "Voce está no ambiente de "
   title:
+    index: "Pagina Inicial"
     coinPage: "Lista de Criptos"
     minerPage: "Lista de tipos de mineração"
     newCrypto: "Nova Cripto"

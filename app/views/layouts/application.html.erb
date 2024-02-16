@@ -14,7 +14,7 @@
     <%= javascript_importmap_tags %>
     <%= javascript_include_tag params[:controller], "data-turbo-track": "reload" %>
   </head>
-
+  <%= render partial:'header' %>
   <body>
     <%= yield %>
   </body>

@@ -1,9 +1,13 @@
-<h1><%= t('title.newCrypto')%></h1>
+<div style="display:flex">
+  <div>
+  <%= link_to t('links.back'), coins_path, class:"btn btn-info" %>
+</div>
+
+
+
+</div>
 
 <%= render "form", coin: @coin %>
 
 <br>
 
-<div>
-  <%= link_to t('links.back'), coins_path, class:"btn btn-info" %>
-</div>

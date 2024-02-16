@@ -1,0 +1,11 @@
+.cryptoCard{
+    display: flex; /* Torna os elementos filhos em um contêiner flexível */
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 400px; /* Ajuste a largura conforme necessário */
+}
+
+.cryptoCard p {
+    padding-left:10px
+}

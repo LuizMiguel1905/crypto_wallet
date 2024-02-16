@@ -1,3 +1,29 @@
-  <div class="data-controller">
-    <%= form.file_field :url_image, class:"form-control"%>
+  <div data-controller="previews">
+
+    <% if coin.url_image.attached? %>
+        <div style=" 
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;">
+    
+      <%= image_tag coin.url_image, data: { previews_target:"input"}, size:'100'  %>
+            </div>
+    <% else %>
+    <div style=" 
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;">
+      <%= image_tag "currency-bitcoin.svg", data: {previews_target: "preview"}, size:'100'%>
+      </div>
+    <% end %>
+    <%= form.label :url_image, style: "display:block" %>
+    <%= form.file_field :url_image, 
+      class:"form-control",
+      direct_upload: true,
+      data: { previews_target: "input", action: "change->previews#preview"}%>
+
   </div>

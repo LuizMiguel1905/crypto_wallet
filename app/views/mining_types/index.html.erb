@@ -1,7 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
 <h1><%= t('title.minerPage')%></h1>
-<%= link_to t('links.back'), root_path %>
+<%= link_to t('links.back'), root_path, class:"btn btn-info" %>
 <%= link_to t('title.newMiner'), new_mining_type_path, class:"btn btn-success" %>
 <div id="mining_types" style="display:flex">
   <% @mining_types.each do |mining_type| %>

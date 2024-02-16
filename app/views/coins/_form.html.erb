@@ -14,13 +14,23 @@
     </div>
   <% end %>
 
-<%= render "image_preview", form: form %>
+<div style="display:flex;     margin: 0;
+    padding: 0;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;">
+    
+<div>
+  <h1><%= t('title.newCrypto')%></h1>
+<%= render partial: 'image_preview', locals: { coin: @coin, form: form} %>
 
-  <div>
+<div>
+  <div >
     <%= form.label :description, class:"form-label" ,style: "display: block" %>
     <%= form.text_field :description, class:"form-control"%>
   </div>
-
+</div>
   <div>
     <%= form.label :acronym, class:"form-label" , style: "display: block" %>
     <%= form.text_field :acronym, class:"form-control" %>
@@ -29,10 +39,11 @@
 
 
   <div class="field">
-  <%= form.select  :mining_type_id, @mining_type_options, { include_blank: t('forms.select') }, class:"form-select"
-%>
+  <%= form.select  :mining_type_id, @mining_type_options, { include_blank: t('forms.select') }, class:"form-select" %>
   </div>
   <div>
     <%= form.submit class:"btn btn-success"%>
   </div>
+</div>
+</div>
 <% end %>
