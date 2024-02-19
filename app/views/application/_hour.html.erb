@@ -1,0 +1,16 @@
+<!-- app/views/seu_arquivo.html.erb -->
+<div data-controller="api" data-target="api.countriesContainer" style="display:flex">
+  <% countryList = ['bitcoin', 'ethereum', 'dogecoin', 'solana'] %>
+  
+  <% countryList.each do |element| %>
+    <% countryApiUrl = "https://api.coingecko.com/api/v3/coins/#{element}" %>
+
+    <div data-target="api.country" data-action="api#fetchData" data-api-url="<%= countryApiUrl %>" style="display:flex">
+      <%= image_tag '', data: { target: 'api.countryFlag' }, height:"32px" %>
+      <p data-target="api.countryName"></p>
+      <p data-target="api.hourNow"></p>
+      <p data-target="api.countryValue"></p>
+      
+    </div>
+  <% end %>
+</div>

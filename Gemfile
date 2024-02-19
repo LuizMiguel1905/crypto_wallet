@@ -33,6 +33,8 @@ gem 'rails-assets-jQuery', source: 'https://rails-assets.org'
 gem 'rails-assets-notify', source: 'https://rails-assets.org'
 gem 'jquery-rails'
 gem 'bootstrap', '~> 5.2', '>= 5.2.3'
+gem 'json', '~> 2.0'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
@@ -52,6 +54,9 @@ gem 'sprockets-rails', :require => 'sprockets/railtie'
 
 gem 'sassc-rails'
 gem "image_processing", ">= 1.2"
+gem 'httparty', '~> 0.18'
+gem "chartkick"
+gem 'rack-cors'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
